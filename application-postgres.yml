@@ -1,6 +1,4 @@
 spring:
-  config:
-    use-legacy-processing: true
   datasource:
     driverClassName: org.postgresql.Driver
     url: jdbc:postgresql://localhost:5432/seller_db
