@@ -5,7 +5,9 @@ eureka:
       
 ---
 spring:
-  profiles: prod
+  config:
+    activate:
+      on-profile: prod
 
 eureka:
   client:
