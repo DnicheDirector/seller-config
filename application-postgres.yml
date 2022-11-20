@@ -13,11 +13,11 @@ spring:
       ddl-auto: none
     open-in-view: false
 
-#---
+---
 spring:
+  profiles: prod
   config:
-    activate:
-      on-profile: prod
+    use-legacy-processing: true  
   datasource:
     driverClassName: org.postgresql.Driver
     url: jdbc:postgresql://db:5432/seller_db
