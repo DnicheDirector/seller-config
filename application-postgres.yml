@@ -1,4 +1,7 @@
 spring:
+  config:
+    active:
+      on-profile: local
   datasource:
     driverClassName: org.postgresql.Driver
     url: jdbc:postgresql://localhost:5432/seller_db
