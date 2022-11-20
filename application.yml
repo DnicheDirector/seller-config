@@ -1,14 +1,17 @@
 spring:
   config:
-    use-legacy-processing: true
+    active:
+      on-profile: dev
 eureka:
   client:
     service-url:
       defaultZone: http://localhost:8761/eureka/
       
----
+#---
 spring:
-  profiles: prod
+  config:
+    active:
+      on-profile: prod
 
 eureka:
   client:
